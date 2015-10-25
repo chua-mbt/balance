@@ -13,6 +13,7 @@ lazy val playServer = (project in file("play")).settings(
     , "com.typesafe.play" %% "play-slick" % "1.1.0"
     , "com.typesafe.play" %% "play-slick-evolutions" % "1.1.0"
     , "org.postgresql" % "postgresql" % "9.3-1102-jdbc41"
+    , "com.github.tototoshi" %% "scala-csv" % "1.2.2"
     , specs2 % Test
   ),
   resolvers ++= Seq(
