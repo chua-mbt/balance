@@ -7,7 +7,8 @@ lazy val playServer = (project in file("play")).settings(
   scalaVersion := scalaV,
   scalaJSProjects := clients,
   libraryDependencies ++= Seq(
-    "com.vmunier" %% "play-scalajs-scripts" % "0.3.0"
+    evolutions
+    , "com.vmunier" %% "play-scalajs-scripts" % "0.3.0"
     , "org.webjars" % "jquery" % "1.11.1"
     , "com.typesafe.play" %% "play-slick" % "1.1.0"
     , "com.typesafe.play" %% "play-slick-evolutions" % "1.1.0"
